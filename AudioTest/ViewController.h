@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) AVAudioSession *audioSession;
+
+@property (assign) SystemSoundID pianoSound;
 
 
 @end

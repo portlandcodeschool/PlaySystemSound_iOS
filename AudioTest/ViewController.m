@@ -17,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.audioSession = [AVAudioSession sharedInstance];
+    
+    NSError *setCategoryError = nil;
+    
+    [self.audioSession setCategory:AVAudioSessionCategoryAmbient error:&setCategoryError];
+    
+    if (setCategoryError) {
+        NSLog(@"Error setting category! %ld", (long)[setCategoryError code]);
+    }
+    
+    
+    NSString *pianoSoundPath = [[NSBundle mainBundle] pathForResource:@"Piano" ofType:@"wav"];
+    NSURL *pianoSoundURL = [NSURL fileURLWithPath:pianoSoundPath];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)pianoSoundURL, &_pianoSound);
+}
+- (IBAction)playSound:(id)sender {
+    AudioServicesPlaySystemSound(self.pianoSound);
+
 }
 
 - (void)didReceiveMemoryWarning {

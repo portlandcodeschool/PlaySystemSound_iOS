@@ -14,6 +14,7 @@
 		845C0C871AA93C5A00F7104D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C0C861AA93C5A00F7104D /* Images.xcassets */; };
 		845C0C8A1AA93C5A00F7104D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845C0C881AA93C5A00F7104D /* LaunchScreen.xib */; };
 		845C0C961AA93C5A00F7104D /* AudioTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C0C951AA93C5A00F7104D /* AudioTestTests.m */; };
+		845C0CA01AA93D8C00F7104D /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 845C0C9F1AA93D8C00F7104D /* Piano.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		845C0C8F1AA93C5A00F7104D /* AudioTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		845C0C941AA93C5A00F7104D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845C0C951AA93C5A00F7104D /* AudioTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTestTests.m; sourceTree = "<group>"; };
+		845C0C9F1AA93D8C00F7104D /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				845C0C7E1AA93C5A00F7104D /* AppDelegate.m */,
 				845C0C801AA93C5A00F7104D /* ViewController.h */,
 				845C0C811AA93C5A00F7104D /* ViewController.m */,
+				845C0C9F1AA93D8C00F7104D /* Piano.wav */,
 				845C0C831AA93C5A00F7104D /* Main.storyboard */,
 				845C0C861AA93C5A00F7104D /* Images.xcassets */,
 				845C0C881AA93C5A00F7104D /* LaunchScreen.xib */,
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845C0CA01AA93D8C00F7104D /* Piano.wav in Resources */,
 				845C0C851AA93C5A00F7104D /* Main.storyboard in Resources */,
 				845C0C8A1AA93C5A00F7104D /* LaunchScreen.xib in Resources */,
 				845C0C871AA93C5A00F7104D /* Images.xcassets in Resources */,
