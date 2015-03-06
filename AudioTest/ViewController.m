@@ -17,12 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    self.audioSession = [AVAudioSession sharedInstance];
-    
+        
     NSError *setCategoryError = nil;
     
-    [self.audioSession setCategory:AVAudioSessionCategoryAmbient error:&setCategoryError];
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&setCategoryError];
     
     if (setCategoryError) {
         NSLog(@"Error setting category! %ld", (long)[setCategoryError code]);

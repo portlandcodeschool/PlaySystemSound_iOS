@@ -11,8 +11,6 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, retain) AVAudioSession *audioSession;
-
 @property (assign) SystemSoundID pianoSound;
 
 
